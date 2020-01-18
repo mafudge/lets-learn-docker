@@ -72,3 +72,49 @@ If you use Docker long enough, it is inevitable that you will need to run more t
 
 To make this happen we have the `docker-compose` utility, which reads the `docker-compose.yml` file. This tool allows you orchestrate running multiple containers under a single command. Learn more at: https://docs.docker.com/compose/compose-file/ 
 
+## Installing Docker
+
+To install Docker on your Windows or Mac, you'll need **Docker Desktop**. To install on Linux, you'll need the **Docker Engine** (also known as **Docker Server**). 
+
+To install, follow these instructions here: https://docs.docker.com/install/ 
+
+## Docker Walk-Through
+
+The best way to learn Docker and really understand its value is apply it to a real-world scenario. In this section we will walk through the docker commands necessary to get JupyterLab https://jupyter.org/  up and running.
+
+Docker runs from the command line, so first you must open a terminal.
+
+1. Let's download the Jupyter Data Science Notebook image from docker hub: https://hub.docker.com/r/jupyter/datascience-notebook. Type the following:   
+`docker pull jupyter/datascience-notebook`
+
+2. It will take a bit for the image to download, when it is finished, let's run a container from the image by typing:  
+`docker run -d jupyter/datascience-notebook`  
+NOTE: The `-d` runs the container in the background and returns you to the command prompt. Without it, you must press `CTRL+C` to return to the command prompt, which stops the container.
+
+3. Let's see what's running, type:  
+`docker ps`  
+To view all the running containers. You should see it up.
+
+4. 
+
+
+docker hub
+
+`docker pull <image>`
+
+`docker run <image>`
+
+`docker run -d -P <image>`
+
+`docker run -d -P --name jupyterlab <image>`
+
+`docker stop jupyterlab`
+
+`docker rm jupyterlab`
+
+volumes
+
+` -v .:/home/jovyan/work`
+
+`docker-compose`
+
