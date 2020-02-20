@@ -2,6 +2,8 @@
 
 A quick overview of Docker for the absolute beginner.
 
+On Youtube Here: https://www.youtube.com/watch?v=fQORO9QEJN4 
+
 ## A Docker Overview
 
 ### What is Docker?
